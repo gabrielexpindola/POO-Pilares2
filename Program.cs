@@ -39,3 +39,14 @@ armazenamento = new BancoDados();
 armazenamento.Salvar("Meu primeiro registro");
 armazenamento.Ler();
 
+// Ex.10
+Console.WriteLine("=== SISTEMA DE SERVIÇOS ===");
+IContratavel servico1 = new Hospedagem("Hotel Fazenda");
+IContratavel servico2 = new Consultoria("Consultoria de TI");
+
+servico1.Contratar();
+servico2.Contratar();
+
+Hospedagem hospedagem = new Hospedagem("Hotel Central");
+
+hospedagem.Cancelar();
